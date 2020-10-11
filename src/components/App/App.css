@@ -200,6 +200,7 @@ a:focus {
 
     .popup-content {
         width: 75%;
+        max-height: 75vh;
     }
 }
 
