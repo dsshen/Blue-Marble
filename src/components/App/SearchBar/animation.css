@@ -1,0 +1,45 @@
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.title1,
+.title2,
+.pick-date,
+.react-datepicker__input-container,
+.pick-location,
+.location-input,
+.search-button-container {
+    animation-name: fade-in;
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+}
+
+.title1 {
+    animation-delay: 500ms;
+}
+
+.title2 {
+    animation-delay: 600ms;
+}
+
+.pick-date {
+    animation-delay: 2000ms;
+}
+
+.react-datepicker__input-container {
+    animation-delay: 2100ms;
+}
+
+.pick-location {
+    animation-delay: 2500ms;
+    z-index: 0;
+}
+
+.location-input {
+    animation-delay: 2600ms;
+}
+
+.search-button-container {
+    animation-delay: 3000ms;
+}
