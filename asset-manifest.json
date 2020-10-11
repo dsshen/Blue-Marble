@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Blue-Marble/static/css/main.18d66052.chunk.css",
+    "main.css": "/Blue-Marble/static/css/main.a23260d6.chunk.css",
     "main.js": "/Blue-Marble/static/js/main.ad27669d.chunk.js",
     "main.js.map": "/Blue-Marble/static/js/main.ad27669d.chunk.js.map",
     "runtime-main.js": "/Blue-Marble/static/js/runtime-main.0f390038.js",
@@ -9,10 +9,10 @@
     "static/js/2.85706a76.chunk.js": "/Blue-Marble/static/js/2.85706a76.chunk.js",
     "static/js/2.85706a76.chunk.js.map": "/Blue-Marble/static/js/2.85706a76.chunk.js.map",
     "index.html": "/Blue-Marble/index.html",
-    "precache-manifest.78b8986ea16a92a2fe71e8df00560d3b.js": "/Blue-Marble/precache-manifest.78b8986ea16a92a2fe71e8df00560d3b.js",
+    "precache-manifest.283dd339da375ad951af6dfc1d6eea74.js": "/Blue-Marble/precache-manifest.283dd339da375ad951af6dfc1d6eea74.js",
     "service-worker.js": "/Blue-Marble/service-worker.js",
     "static/css/2.bdff9e97.chunk.css.map": "/Blue-Marble/static/css/2.bdff9e97.chunk.css.map",
-    "static/css/main.18d66052.chunk.css.map": "/Blue-Marble/static/css/main.18d66052.chunk.css.map",
+    "static/css/main.a23260d6.chunk.css.map": "/Blue-Marble/static/css/main.a23260d6.chunk.css.map",
     "static/js/2.85706a76.chunk.js.LICENSE.txt": "/Blue-Marble/static/js/2.85706a76.chunk.js.LICENSE.txt",
     "static/media/App.css": "/Blue-Marble/static/media/SourceSansPro-Regular.c1678b46.ttf"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.0f390038.js",
     "static/css/2.bdff9e97.chunk.css",
     "static/js/2.85706a76.chunk.js",
-    "static/css/main.18d66052.chunk.css",
+    "static/css/main.a23260d6.chunk.css",
     "static/js/main.ad27669d.chunk.js"
   ]
 }
