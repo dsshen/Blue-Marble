@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eadcc63053b1c1285e546a7f9d568880",
+    "revision": "c987bb351b530222b250f2814ebf01f7",
     "url": "/Blue-Marble/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Blue-Marble/static/css/2.bdff9e97.chunk.css"
   },
   {
-    "revision": "3b4a2d10eb04d8f0030a",
-    "url": "/Blue-Marble/static/css/main.65f42a5e.chunk.css"
+    "revision": "9e8bc95952e5d864059d",
+    "url": "/Blue-Marble/static/css/main.18d66052.chunk.css"
   },
   {
     "revision": "90185addb8bbb97b3c0f",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Blue-Marble/static/js/2.85706a76.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3b4a2d10eb04d8f0030a",
-    "url": "/Blue-Marble/static/js/main.5991e2f4.chunk.js"
+    "revision": "9e8bc95952e5d864059d",
+    "url": "/Blue-Marble/static/js/main.ad27669d.chunk.js"
   },
   {
     "revision": "b0c4a5a85b7c0970a375",
