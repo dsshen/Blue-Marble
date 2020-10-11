@@ -45,7 +45,7 @@
     .Globe-container {
         width: 75%;
         max-width: none;
-        min-width: 325px;
+        min-width: 18rem;
         align-self: auto;
     }
 
