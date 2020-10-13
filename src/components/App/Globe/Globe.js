@@ -11,6 +11,7 @@ class Globe extends React.Component {
 
         // "this" binding
         this.handleArrowKeyPress = this.handleArrowKeyPress.bind(this);
+        this.handleImgLoaded = this.handleImgLoaded.bind(this);
     }
 
     // Allow user to rotate globe using arrow keys on keyboard
@@ -23,6 +24,11 @@ class Globe extends React.Component {
             e.preventDefault();
             this.props.spinCounterclockwise();
         }
+    }
+
+    // Scroll window to the Globe container once the globe image has loaded
+    handleImgLoaded() {
+        this.props.scrollToGlobe();
     }
 
     // Display the Earth, along with relevant metadata 
@@ -42,17 +48,27 @@ class Globe extends React.Component {
                 const jpgUrl = `https://epic.gsfc.nasa.gov/archive/natural/${year}/${month}/${day}/jpg/${imgName}.jpg`;
                 const pngUrl = `https://epic.gsfc.nasa.gov/archive/natural/${year}/${month}/${day}/png/${imgName}.png`;
 
-                // Show/hide the image using CSS classes depending on the value of imgIndex
-                const className = i === imgIndex ? 'blue-marble' : 'blue-marble no-display';
-
-                // store in imageDivs[] as JSX expression
-                imageDivs[i] = (
-                    <div className={className} key={i}>
-                        <a href={pngUrl} target="_blank" rel="noopener noreferrer">
-                            <img src={jpgUrl} alt="" />
-                        </a>
-                    </div>
-                );
+                // Store in imageDivs[] as JSX expression. For the display image, also include an onload event callback that scrolls the site
+                // to the Globe component.
+                // This provides extra insurance that the scroll happens properly
+                if (i === imgIndex) {
+                    imageDivs[i] = (
+                        <div className='blue-marble' key={i}>
+                            <a href={pngUrl} target="_blank" rel="noopener noreferrer">
+                                <img src={jpgUrl} alt="" onLoad={this.handleImgLoaded} />
+                            </a>
+                        </div>
+                    );
+                }
+                else {
+                    imageDivs[i] = (
+                        <div className='blue-marble no-display' key={i}>
+                            <a href={pngUrl} target="_blank" rel="noopener noreferrer">
+                                <img src={jpgUrl} alt="" />
+                            </a>
+                        </div>
+                    );
+                }
             }
 
             // Return the JSX
@@ -90,7 +106,8 @@ Globe.propTypes = {
     globeMsg: PropTypes.object,
     imgIndex: PropTypes.number,
     spinClockwise: PropTypes.func,
-    spinCounterclockwise: PropTypes.func
+    spinCounterclockwise: PropTypes.func,
+    scrollToGlobe: PropTypes.func
 }
 
 export default Globe;

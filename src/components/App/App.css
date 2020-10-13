@@ -25,6 +25,10 @@
 }
 
 /* Begin custom CSS styling */
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     color: #F8F8FF;

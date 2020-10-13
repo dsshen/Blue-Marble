@@ -119,6 +119,13 @@ class App extends React.Component {
             location: newLocation
         });
     }
+
+    // Scroll to the Globe component. Gets called after every search to improve mobile viewing experience
+    // so users don't have to scroll down to see the rendered globe pic
+    scrollToGlobe() {
+        let globeElement = document.querySelector('.Globe-container');
+        globeElement.scrollIntoView();
+    }
     
     // Get array of dates with available natural color imagery. Only fetch from API if needed
     async getAvailableDatesArray() {
@@ -359,7 +366,7 @@ class App extends React.Component {
             let imgIndex = await this.determineImgIndexBasedOnLocation(this.state.location, metadata);
 
             // Finally, set the App state based on the retrieved metadata
-            this.setState({
+            await this.setStateAsync({
                 lastDateSearched: lastDateSearched,
                 metadata: metadata,
                 globeMsg: globeMsg,
@@ -369,6 +376,9 @@ class App extends React.Component {
 
             // Hide the searchBarStatus message after 4 secs
             this.hideMsgAfterFourSecs();
+
+            // Scroll to the Globe component
+            this.scrollToGlobe();
         }
         catch(error) {
             console.log(error);
@@ -527,6 +537,7 @@ class App extends React.Component {
                         imgIndex={this.state.imgIndex}
                         spinClockwise={this.spinClockwise}
                         spinCounterclockwise={this.spinCounterclockwise}
+                        scrollToGlobe={this.scrollToGlobe}
                     />
                 </div>
             </div>
