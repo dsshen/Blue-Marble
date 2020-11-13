@@ -337,7 +337,10 @@ class App extends React.Component {
                         globeMsgBeforeLocationInfo = <span>Here's what Earth looked like <span className="accent-color">yesterday</span></span>;
                     }
                     else {
-                        globeMsgBeforeLocationInfo = <span>It looks like yesterday's pictures aren't up yet. Here's what Earth looked like on <span className="accent-color">{availableDateInEnglish}</span></span>;
+                        let searchedDateInEnglish = Helper.convertDateStrToEnglish(this.state.date);
+                        let earlierOrLater = this.state.date > availableDate ? 'earlier' : 'later';
+                        let dayOrDays = smallestDiff === 1 ? 'day' : 'days';
+                        globeMsgBeforeLocationInfo = <span>It looks like NASA has no data for {searchedDateInEnglish}. Here's Earth {smallestDiff} {dayOrDays} {earlierOrLater} on <span className="accent-color">{availableDateInEnglish}</span></span>;
                     }
                 }
                 else {
