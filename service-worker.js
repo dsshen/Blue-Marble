@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Blue-Marble/precache-manifest.dd37e854cd8c0ad885e1e9467742b786.js"
+  "/Blue-Marble/precache-manifest.e0db30e7e5d2b35617cb38ae445ba560.js"
 );
 
 self.addEventListener('message', (event) => {
