@@ -511,7 +511,7 @@ class App extends React.Component {
 
                             <p>EPIC's unique "big picture" vantage point has allowed it to capture remarkable shots of significant climatic and celestial events, such as the <span className="preset-search" onClick={() => {this.search2020CaliforniaFires(); close();}}>2020 California wildfires</span>, <span className="preset-search" onClick={() => {this.searchMangkhut(); close();}}>Typhoon Mangkhut</span> and the <span className="preset-search" onClick={() => {this.search2017SolarEclipse(); close();}}>solar eclipse of August 21, 2017</span>.</p>
 
-                            <p><a href="https://github.com/dsshen/Blue-Marble" target="_blank" rel="noopener noreferrer">Made with ReactJS.</a></p>
+                            <p>Made with <a href="https://github.com/dsshen/blue-marble" target="_blank" rel="noopener noreferrer">React</a>.</p>
 
                             <div className="return-button-container">
                                 <div className="return-button" onClick={() => close()}>Return to site</div>
