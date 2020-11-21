@@ -33,7 +33,7 @@ class SearchBar extends React.Component {
     render() {
         return (
             <div className="SearchBar-container">
-                <h1 className="accent-color"><span className="title1">Blue </span><span className="title2">Marble</span></h1>
+                <h1 className="accent-color"><span className="title1">Debug </span><span className="title2">Marble</span></h1>
                 <p className="pick-a-search-term pick-date"><span className="bold">Pick a <span className="accent-color">date</span>.</span></p>
                 <DatePicker
                     selected={Helper.convertStrToDate(this.props.date)}
